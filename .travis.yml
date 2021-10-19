@@ -6,4 +6,4 @@ before_install:
   - docker build -t aliborna/front -f Dockerfile.dev .
 
 script:
-  - docker run aliborna/front npm run test -- --coverage   
+  - docker run aliborna/front npm run test -- --watchAll=false   
